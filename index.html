@@ -1,0 +1,28 @@
+--- 
+layout: default 
+---
+
+<div class="posts">
+    {% for post in site.posts %}
+    <section class="post-single">
+      
+        <div class="post-title">    
+            <a href="{{ post.url | prepend: site.baseurl }}"> {{ post.title }} </a>  
+        </div>
+          <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
+        
+        <p>
+            {% if post.summary %}
+              {{ post.summary }}
+            {% else %}
+              {{ post.content | truncatewords: 150 }}
+            {% endif %}
+
+            
+        </p>
+
+<!--        <a href="{{ post.url | prepend: site.baseurl }}" class="btn-readpost" data-sr-id="6" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: all 0.35s ease 0s, -webkit-transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; transition: all 0.35s ease 0s, transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; ">Read Post!</a> -->
+
+    </section>
+    {% endfor %}
+</div>
