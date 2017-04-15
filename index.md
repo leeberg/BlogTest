@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Welcome to Optmimzationneering - the github blog of Lee Berg
 
 You can use the [editor on GitHub](https://github.com/leeberg/BlogTest/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
