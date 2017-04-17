@@ -35,7 +35,8 @@ $tablet : 700px;
   width: 50%;
   margin-left: auto;
   margin-right: auto;
-  padding: 48px 48px;
+  padding-top: 25px;
+  padding-bottom: 10px;
   color: #fff;
   font: {
     family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -62,6 +63,36 @@ hr.small {
   margin: 15px auto;
   border-color: white;
 }
+
+
+/*
+ * Header Navigation
+ */
+
+.nav {
+  padding-top: 50px;
+  padding-bottom: 10px;
+  
+  text-align: center;
+  
+   a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase; 
+    padding: 24px 30px;
+    font-size: 25px;
+    &:hover {
+      color: #FFFFFF;
+    }
+  }
+
+}
+
+
+
+
+
+
 
 
 .post-single {
@@ -135,36 +166,7 @@ text-decoration: none;
 }
 
 
-/*
- * NAV
- */
 
-.nav {
-  font-family: $font-family;
-  background: #3a4250;
-  text-align: center;
-  ul {
-    margin: 0 auto;
-    overflow: hidden;
-    max-width: 500px;
-  }
-  li {
-    float: left;
-    width: 25%;
-  }
-  a {
-    text-decoration: none;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    display: block;
-    padding: 24px 30px;
-    font-size: 15px;
-    &:hover {
-      color: #FFFFFF;
-    }
-  }
-}
 
 body {
   background-color: #F2F2F1;
