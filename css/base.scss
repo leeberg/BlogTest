@@ -187,12 +187,14 @@ body {
 
 .footer {
   background-color: $brand-color;
-  background-image: -webkit-gradient(linear, left top, right bottom, from($brand-color), to(#E96F23));
+  background-image: -webkit-gradient(linear, left top, right bottom, from($brand-color), to(#E83B0C));
   background-image: -webkit-linear-gradient(top left, $brand-color, #E96F23);
-  background-image: linear-gradient(to bottom right, $brand-color, #E96F23);
+  background-image: linear-gradient(to bottom right, $brand-color, #E83B0C);
 }
 
+
 .footer_links {
+  text-align: center;
   width: 50%;
   margin-left: auto;
   margin-right: auto;
