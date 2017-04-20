@@ -10,10 +10,13 @@ Recently I have been developing a number of "Hobby" IoT Solutions, and for me a 
 For Readers, please know that following blog posts on Azure Functions from [THE GREATS ](https://memecrunch.com/meme/BEAOT/you-da-real-mvp/image.jpg?w=992&c=1)are required reading for this topic, and will get you up to speed with Azure Functions (Especially PowerShell + Azure Functions)
 
 **[David O'Brien](https://david-obrien.net)**
-[**Stefan Stranger
-**](https://blogs.technet.microsoft.com/stefan_stranger/2017/01/29/powershell-azure-functions-lessons-learned/)[**Tao Yang**](http://blog.tyang.org/?s=azure+function)
 
-My blog post here skips some of the details and instead focuses on implementation and some of the results, this post mainly serves as an example of how awesome Azure Functions are and to highlight some of their capabilities.
+[**Stefan Stranger**](https://blogs.technet.microsoft.com/stefan_stranger/2017/01/29/powershell-azure-functions-lessons-learned/)
+
+[**Tao Yang**](http://blog.tyang.org/?s=azure+function)
+
+
+This blog post here skips some of the details and instead focuses on implementation and some of the results, this post mainly serves as an example of how awesome Azure Functions are and to highlight some of their capabilities.
 
 [Github Repo for Example Script](https://github.com/leeberg/AzureFunctionsOMS)
 
@@ -25,7 +28,7 @@ This process is actually the most straight forward, as the process to Inject dat
 
 I put this together before I even realized that Azure Functions could run natively as  PowerShell - so if you are not comfortable with C#, Powershell is a viable option..
 
-![](overview.png)
+![]({{ site.baseurl }}/assets/img/overview.png)
 
 The process of injecting data into OMS relies on the "OMS Data Collector API" which is well documented and has many code examples:  [Microsoft Documentation on OMS Data Collector API](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-data-collector-api). You can literally copy / paste some of the examples from the official documentation and have a working model up in minutes
 
@@ -33,15 +36,16 @@ I wanted to be able to send data from a wide array of sources and in a variety o
 
 Remember, because our workspace keys are stored in our Azure Function, our client app just needs to call the Azure Function hook url with credentials(or anonymously) to run the function.
 
-<script src="fb49d6c2aff88ab43b741711b70427e6.js"></script>
+<script src="https://gist.github.com/leeberg/fb49d6c2aff88ab43b741711b70427e6.js"></script>
 
-[![](inject1.png)](http://www.leealanberg.com/blog/2017/02/05/azure-functions-oms-data-retrieval-and-injection/inject1/)
 
-[![](Inject2.png)](http://www.leealanberg.com/blog/2017/02/05/azure-functions-oms-data-retrieval-and-injection/inject2/)
+![]({{ site.baseurl }}/assets/img/inject1.png)
+
+![]({{ site.baseurl }}/assets/img/Inject2.png)
 
 In my use case, I have a Raspberry Pi with a number of environmental / Bluetooth LE sensors that is running a simple Python Script to push the data to my Azure Function to be processed into OMS.
 
-[![](python.png)](http://www.leealanberg.com/blog/2017/02/05/azure-functions-oms-data-retrieval-and-injection/python/)
+![]({{ site.baseurl }}/assets/img/python.png)
 
 &nbsp;
 
@@ -53,29 +57,29 @@ However, PowerShell Azure Functions have many modules setup natively in the prof
 
 In my example I am using **Get-AzureRmOperationalInsightsSearchResults** and **Get-AzureRmOperationalInsights_Saved_SearchResults** to fulfill our goal.
 
-<script src="da15410629f1f84b8d163f1ba125312b.js"></script>
-&nbsp;
-
-[![](COde.png)](http://www.leealanberg.com/blog/2017/02/05/azure-functions-oms-data-retrieval-and-injection/code/)
+<script src="https://gist.github.com/leeberg/da15410629f1f84b8d163f1ba125312b.js"></script>
 
 &nbsp;
 
-**Azure Function Logs:**[
-![](Function-Logs.png)](http://www.leealanberg.com/blog/2017/02/05/azure-functions-oms-data-retrieval-and-injection/function-logs/)
-
-**The results in OMS:**[
-![](OMS-Search.png)](http://www.leealanberg.com/blog/2017/02/05/azure-functions-oms-data-retrieval-and-injection/oms-search/)
-
-**Secret Special Bonus** that utilizes this method:**
-** <iframe src="YzSbFts4x4A" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+![]({{ site.baseurl }}/assets/img/COde.png)
 
 &nbsp;
+
+**Azure Function Logs:**
+
+![]({{ site.baseurl }}/assets/img/Function-Logs.png)
+
+
+
+**The results in OMS:**
+
+![]({{ site.baseurl }}/assets/img/OMS-Search.png)
+
 
 &nbsp;
 
 Using Azure Functions, you can quickly and easily get just about anything INTO or OUT OF OMS securely and effectively.
 
-** **
 
 &nbsp;
 

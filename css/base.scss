@@ -150,30 +150,11 @@ text-decoration: none;
 }
 
 
-
-//kinda stolen
-.btn-readpost {
-  color: #222;
-  background-color: #fff;
-  border-color: #000000;
-  transition: all .35s;
-  text-decoration: none;
-  border: none;
-  border-radius: 300px;
-  font-weight: 700;
-  text-transform: uppercase;
-  padding: 15px 30px;
-}
-
-
-
-
 body {
   background-color: #F2F2F1;
   overflow-x: hidden;
   font-family: $font-family, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
 
 
 .main_content {
@@ -205,3 +186,22 @@ body {
     ;
   }
 }
+
+
+
+
+
+// Post
+.main_content {
+
+    img{
+      max-width: 100%;
+    }     
+    
+
+}
+
+
+  
+ 
+  
