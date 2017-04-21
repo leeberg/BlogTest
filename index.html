@@ -9,13 +9,20 @@ layout: default
         <div class="post-title">    
             <a href="{{ post.url | prepend: site.baseurl }}"> {{ post.title }} </a>  
         </div>
-          <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
+          <p class="post-meta">
+              {{ post.date | date: "%b %-d, %Y" }}
+              {% for tag in post.tags %}
+              -
+                {{tag}}
+              {% endfor %}
+
+          </p>
         
         <p>
             {% if post.summary %}
               {{ post.summary }}
             {% else %}
-              {{ post.content | truncatewords: 150 }}
+                {{ post.excerpt }}
             {% endif %}
 
             

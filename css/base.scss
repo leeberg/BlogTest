@@ -1,12 +1,11 @@
 --- 
 --- 
 
-// start content
+// Variables
 $font-family: "Helvetica Neue";
 $font-text: "Helvetica Neue";
 $base-font-size: 12;
 $grey-color: #f7f7f7;
-// Our variables
 $base-font-family: $font-family;
 $base-font-size : 16px;
 $base-font-weight: 300;
@@ -23,6 +22,10 @@ $grey-color-dark : darken($grey-color, 25%);
 $content-width : 800px;
 $tablet : 700px;
 
+
+
+
+//HEADER STUFF
 
 .header {
   background-color: $brand-color;
@@ -65,9 +68,30 @@ hr.small {
 }
 
 
-/*
- * Header Navigation
- */
+.header_badges
+{
+  a{
+    text-decoration: none;
+  }
+
+}
+
+
+.header_title
+{
+  color: #ffffff;
+  a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s;
+    &:hover {
+      color: $brand-color;
+    }
+  }
+
+}
+
+
 
 .nav {
   padding-top: 50px;
@@ -89,17 +113,40 @@ hr.small {
 }
 
 
+//POSTS
+
+.post_header{
+    //Contains the Post Title and Post Meta
+
+}
+
+.post-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+
+  a {
+    text-decoration: none;
+  }
 
 
-
-
+  color: #384455;
+  a {
+    color: #384455;
+    transition: color 0.3s;
+    &:hover {
+      color: $brand-color;
+    }
+  }
+}
 
 
 .post-single {
+  margin: 20px 0;
   padding: 25px 0;
     border-bottom: 1px solid #e7e5e5;
   padding-bottom: 20px;
-  margin: 20px 0;
+
   text-align: center;
   &:last-child {
     border-bottom: none;
@@ -107,38 +154,15 @@ hr.small {
   }
 }
 
-.post-title {
-  font-weight: 500;
-  font-size: 50px;
-   a {
-    text-decoration: none;
-   }
 
-    text-align: center;
-    color: #384455;
-    a {
-      color: #384455;
-      transition: color 0.3s;
-      &:hover {
-        color: $brand-color;
-      }
-  }
-}
 
-.header_badges
-{
-  a{
-text-decoration: none;
-  }
- 
-}
+//post meta is date and stuff
 .post-meta {
+  text-align: left;
   width: auto;
-  font-weight: 300;
   margin: 0;
   padding: .25em 0;
-  color: #7a7a7a;
-  font-style: italic;
+
 }
 
 
@@ -157,12 +181,33 @@ body {
 }
 
 
+
+
+
+// Post
+
+
+
+
 .main_content {
   max-width: $content-width;
   margin: 0 auto;
   background: white;
   padding: 0 75px 75px 75px;
+
+  //Prevent Images from overrun
+  img{
+    max-width: 100%;
+  }
+
+  //Prevent Images from overrun
+  .code{
+    max-width: 100%;
+  }
+
+
 }
+
 
 
 
@@ -183,25 +228,17 @@ body {
   color: #fff;
   font: {
     family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    ;
+  ;
   }
 }
 
 
-
-
-
-// Post
-.main_content {
-
-    img{
-      max-width: 100%;
-    }     
-    
-
+.footer_badges
+{
+  a{
+    text-decoration: none;
+  }
+  text-align: center;
 }
-
-
-  
  
   

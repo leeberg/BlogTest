@@ -2,7 +2,8 @@
 layout: post
 title: "Azure Functions - OMS: Data Retrieval and Injection"
 date: 2017-02-05
-tags: ["OMS"]
+tags: ["OMS","Azure","Azure Functions"]
+excerpt_separator: <!--more-->
 ---
 
 Recently I have been developing a number of "Hobby" IoT Solutions, and for me a quick start to this development was to use OMS as a Temporary Storage and Alerting Mechanism. Through this process (and suggestion by the great Tao Yang) I have taken the time to experiment with Azure functions to Retrieve Data from OMS, and to Inject Data into OMS.
@@ -23,7 +24,9 @@ This blog post here skips some of the details and instead focuses on implementat
 <!--more-->
 
 ## **Data Injection**
-
+⋅⋅* Unordered sub-list.
+⋅⋅* Unordered sub-list.
+⋅⋅* Unordered sub-list.
 This process is actually the most straight forward, as the process to Inject data into OMS is fairly well documented. In this case I decided opt NOT to use PowerShell and instead use C#.
 
 I put this together before I even realized that Azure Functions could run natively as  PowerShell - so if you are not comfortable with C#, Powershell is a viable option..

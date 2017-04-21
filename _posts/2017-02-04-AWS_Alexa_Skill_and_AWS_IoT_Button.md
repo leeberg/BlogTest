@@ -3,11 +3,14 @@ layout: post
 title: AWS Alexa Skill and AWS IoT Button Experiments!
 date: 2017-02-04
 tags: ["AWS","IoT"]
+excerpt_separator: <!--more-->
 ---
 
 I have recently been experimenting with some of the latest and greatest cloud / tech offerings from Amazon, and have recently put together two separate videos with some of my tests / proof of concepts / experiments. 
 
 One is specific to Alexa (Echo Dot) and the other is the Amazon Dash / AWS IoT Button. Both relate to Service Management with ServiceNow in their own way, enjoy!
+
+<!--more-->
 
 **Alexa Skill: Proof of Concept - ITSM Personal Assistant**
 

@@ -2,7 +2,8 @@
 layout: post
 title: Deploying PowerShell Azure Functions with Visual Studio Team Services (Simple)
 date: 2017-03-30
-tags: ["Azure","DevOps"]
+tags: ["Azure","DevOps","Azure Functions","VSTS"]
+excerpt_separator: <!--more-->
 ---
 
 Many of my customers have started utilizing the new capabilities of Visual Studio Online: Visual Studio Team Services  to manage and deploy production Azure Resources. I have been recently tasked with deploying and maintaining PowerShell based Azure Functions in such an environment.

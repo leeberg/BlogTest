@@ -3,11 +3,17 @@ layout: post
 title: Pulling the plug on your hybrid runbook worker (Force Remove-HybridRunbookWorker)
 date: 2016-01-23
 tags: ["Automation","Azure Automation","Hybrid Runbook Worker","SCORCH"]
+excerpt_separator: <!--more-->
 ---
+
 
 I had a situation where I was having trouble REMOVING my Azure Automation Hybrid Runbook Worker. I could not successfully run the "Remove-HybridRunbookWorker" command as I did not the URL / Key Information.
 
 I my instance, I had deleted my Azure Automation Account in Azure, even though I had a Hybrid Runbook Worker registered to that Account, I did not remove the hybrid runbook worker before I removed the Automation account.
+
+This post will provide an option for resolving this situation:
+
+<!--more-->
 
 Later, when I wanted to setup the Hybrid Runbook Worker on the SAME server that had previously been configured to that automation subscription I was met with the error: "Machine is already registered"
 
