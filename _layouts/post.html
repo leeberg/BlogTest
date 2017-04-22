@@ -1,6 +1,9 @@
 ---
 layout: default
+comments: true
+# other options
 ---
+
 <article class="posts">
 
   <header class="post-header">
@@ -26,7 +29,8 @@ layout: default
     {{ content }}
   </div>
 
-  {% if site.disqus.shortname %}
     {% include disqus_comments.html %}
-  {% endif %}
+
 </article>
+
+
