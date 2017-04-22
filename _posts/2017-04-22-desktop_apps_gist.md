@@ -6,7 +6,7 @@ tags: ["Productivity","Tools"]
 excerpt_separator: <!--more-->
 ---
 
-In the last few months I have had to rebuild my desktop / laptop computers. This exercise has had me going through the motions of reinstalling all of my favorite applications time and time again.
+In the last few months I have had to rebuild my desktop / laptop computers a number of times. This exercise has had me going through the motions of reinstalling all of my favorite applications time and time again.
 
 We have many very easy to use tools to streamline the process, such as [Chocolatey](https://chocolatey.org), [Ninite](https://ninite.com), or [NPM](https://www.npmjs.com/) but often times I have felt the need to simply keep a running tally of all the various applications that I need to use regular basis or simply cannot live without.
 
