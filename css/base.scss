@@ -24,7 +24,6 @@ $tablet : 700px;
 
 
 
-
 //HEADER STUFF
 
 .header {
@@ -35,7 +34,7 @@ $tablet : 700px;
 }
 
 .header_content {
-  width: 50%;
+  width: $content-width;
   margin-left: auto;
   margin-right: auto;
   padding-top: 25px;
@@ -70,6 +69,10 @@ hr.small {
 
 .header_badges
 {
+  float: left;
+  width: 50%;
+  
+
   a{
     text-decoration: none;
   }
@@ -90,6 +93,41 @@ hr.small {
   }
 
 }
+
+
+
+
+//SEARCH!
+.searchcontainer{
+  float: right;
+  width: 50%;
+  }
+
+.searchcontainer input#search{
+  width: 55%;
+  height: 42px;
+  background: #ffffff;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: #63717f;
+  padding-left: 20px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.searchcontainer .icon{
+  height: 42px;
+  width: 42px;
+  margin-left: 15px;
+  margin-top: 1px;
+  color: $brand-color;
+}
+
+
+
+
 
 
 
@@ -242,3 +280,11 @@ body {
 }
  
   
+
+
+
+
+
+
+
+
