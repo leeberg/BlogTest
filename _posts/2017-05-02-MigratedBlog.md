@@ -38,7 +38,7 @@ I really like to think of it as "Blogging as Code"... To write a new post, I sim
 
   
   
-[Jekyll](https://jekyllrb.com/), *like* WordPress does have many public themes available as well, so if you don't feel like tweaking style sheets and HTML templates, you really don't have to. You will notice that MANY GREAT blogs out there utilize the [Minimal Mistakes](https://mademistakes.com/work/minimal-mistakes-jekyll-theme/) theme - I would suggest taking a look at this if you are interested in getting started. GitHub also has some great [Tutorials](https://pages.github.com)... at this point, you can create GitHub Pages by simply by creating a new repo and checking a checkbox!
+[Jekyll](https://jekyllrb.com/), *like* WordPress does have many public themes available as well, so if you don't feel like tweaking style sheets and HTML templates, you really don't have to. You will notice that MANY GREAT blogs out there utilize the [Minimal Mistakes](https://mademistakes.com/work/minimal-mistakes-jekyll-theme/) theme - I would suggest taking a look at this if you are interested in getting started. GitHub also has some great [Tutorials](https://pages.github.com)... and at this point, you can create a GitHub Pages site by simply creating a new GitHub repo and checking a checkbox!
   
 I will say that WordPress is a great platform, but if you are comfortable with using GitHub, getting into Code, and MarkDown, well it's a no-brainer! Jekyll has many advanced features for testing / maiting your website in code, the experience of working on my site and writing posts has felt very natural for me as someone who works with GIT repositories for all projects and lives in code.
 
