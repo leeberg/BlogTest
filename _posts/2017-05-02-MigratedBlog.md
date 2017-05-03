@@ -34,7 +34,7 @@ I really like to think of it as "Blogging as Code"... To write a new post, I sim
   
 
 *What blogging in 2017 looks like:*  
-![]({{ site.baseurl }}/assets/img/2017blogging.png)  
+![]({{ site.baseurl }}/assets/img/2017Blogging.png)  
 
   
   
