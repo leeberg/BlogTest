@@ -26,8 +26,9 @@ permalink: /:year/:month/:title
 paginate: 5
 
 # Build settings
-markdown: kramdown
 theme: minima
+markdown: kramdown
+highlighter: rouge
 sass:
   compressed: true
 gems:
