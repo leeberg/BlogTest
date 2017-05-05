@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Monitoring Azure Functions with Application Insights & OMS
-date: 2017-04-22
+date: 2017-05-04
 tags: ["Azure Functions","Application Insights","OMS"]
 excerpt_separator: <!--more-->
 ---
@@ -23,13 +23,12 @@ Before we get started... you might have noticed I mention Operations Management 
 [Official Announcement](https://blogs.msdn.microsoft.com/appserviceteam/2017/04/06/azure-functions-application-insights/)
 
 In April 2017, Microsoft released a preview of direct integration between Azure Functions and Application Insights. This solution involves having an existing Application Insights Workspace and adding a few settings to your Function App. Once completed, many different sets of data will automatically start transferring from your Azure Functions into your Application Insights Workspace.
-
-From Microsoft:  
+  
 > Now it takes (nearly) zero effort to add Application Insights to your Azure Functions and immediately unlock a powerful tool for monitoring your applications
 
-*However*, please know that there is a huge caveat here, this solution is currently in PREVIEW and subject to breaking changes!  
-[From the Microsoft Azure Functions Wiki](https://github.com/Azure/Azure-Functions/wiki/App-Insights-(Preview))**:**
+*However*, please know that there is a huge caveat here, this solution is currently in PREVIEW and subject to breaking changes!
 
+[From the Microsoft Azure Functions Wiki](https://github.com/Azure/Azure-Functions/wiki/App-Insights-(Preview))**:**
 >⚠️ 🚧 This is a preview feature and may have breaking changes before we GA it. Use this in production with caution. We don't expect any API breaking changes (maybe data changes), but we are not yet 100% sure. 🚧 ⚠️
 
 Keep this mind, and be prepared for changes...that being said, once you enable this functionality you will get a TON of useful data into Application Insights.
