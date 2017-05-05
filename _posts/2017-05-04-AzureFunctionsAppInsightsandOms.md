@@ -70,7 +70,7 @@ One of the great features of Azure Functions is that we can utilize our own pack
 I would actually suggest this method if you are just getting started, don't need all the bells & whistles of the official solution, OR most importantly, don't want to base your monitoring and management of your Azure Function around a preview feature (May 2017) that could go away / have breaking changes...
 
 
-#####C# Functions - Using NuGet to "Get" and load the Application Insights API
+#### C# Functions - Using NuGet to "Get" and load the Application Insights API ####
 I want to give full credit to this method to:[Christopher Anderson](https://github.com/christopheranderson) a PM for Azure at Microsoft, he even has a [github repo](https://github.com/christopheranderson/azure-functions-app-insights-sample) with great examples and documentation of this method to get you started!
 
 
@@ -102,7 +102,7 @@ I want to give full credit to this method to:[Christopher Anderson](https://gith
   
   
 
-#####PowerShell Functions:
+#### PowerShell Functions: ####
 You wouldn't think I would do a blog post and script PowerShell functions right???
 
 This process is very simliar to the above example, but in this case I am going to UPLOAD the Application Insights to my Function App and "Import" the functionality of the Application Insights DLL into to my function.
