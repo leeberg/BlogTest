@@ -28,8 +28,7 @@ In April 2017, Microsoft released a preview of direct integration between Azure 
 
 *However*, please know that there is a huge caveat here, this solution is currently in PREVIEW and subject to breaking changes!
 
-[From the Microsoft Azure Functions Wiki](https://github.com/Azure/Azure-Functions/wiki/App-Insights-(Preview))**:**
->⚠️ 🚧 This is a preview feature and may have breaking changes before we GA it. Use this in production with caution. We don't expect any API breaking changes (maybe data changes), but we are not yet 100% sure. 🚧 ⚠️
+>  This is a preview feature and may have breaking changes before we GA it. Use this in production with caution. We don't expect any API breaking changes (maybe data changes), but we are not yet 100% sure.  
 
 Keep this mind, and be prepared for changes...that being said, once you enable this functionality you will get a TON of useful data into Application Insights.
 
