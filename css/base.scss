@@ -61,6 +61,10 @@ $tablet : 700px;
   img{
     border-radius: 50%;
   }
+   a{
+    text-decoration: none;
+    color: #ffffff;
+  }
     
 
 }
@@ -95,11 +99,14 @@ hr.small {
   float: left;
   //width: 50%;
   
+ img{
+    border-radius: 50%;
+  }
 
   a{
     text-decoration: none;
+    color: #ffffff;
   }
-
 }
 
 
@@ -408,16 +415,17 @@ blockquote {
   background: #f9f9f9;
   border-left: 10px solid #ccc;
   margin: 1.5em 10px;
-  padding: 0.5em 10px;
+  padding: 0.5em 10px;  
 }
+
 blockquote:before {
   color: #ccc;
-  content: open-quote;
   font-size: 4em;
   line-height: 0.1em;
   margin-right: 0.25em;
   vertical-align: -0.4em;
 }
+
 blockquote p {
   display: inline;
 }
