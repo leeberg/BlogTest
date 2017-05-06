@@ -2,8 +2,7 @@
 --- 
 
 // Variables
-$font-family: "Helvetica Neue";
-$font-text: "Helvetica Neue";
+$font-family: 'Lato', sans-serif;
 $base-font-size: 12;
 $grey-color: #f7f7f7;
 $base-font-family: $font-family;
@@ -16,10 +15,12 @@ $text-color : #111;
 $background-color: #fdfdfd;
 $brand-color : #FF9800;
 $brand-color-dark : #FF5722;
-$grey-color : #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark : darken($grey-color, 25%);
-// Width of the content area
+$grey-color : #9E9E9E;
+$grey-color-light: #F5F5F5;
+$grey-color-dark : #424242;
+
+
+// Width of the content area  - this is bad
 $content-width : 800px;
 $tablet : 700px;
 
@@ -29,9 +30,7 @@ $tablet : 700px;
 
 .header {
   background-color: $brand-color;
-  background-image: -webkit-gradient(linear, left top, right bottom, from($brand-color), to(#E83B0C));
-  background-image: -webkit-linear-gradient(top left, $brand-color, #E96F23);
-  background-image: linear-gradient(to bottom right, $brand-color, #E83B0C);
+  background-image: linear-gradient(to bottom right, $brand-color, $brand-color-dark);
 }
 
 .header_content {
@@ -39,26 +38,49 @@ $tablet : 700px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 25px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   color: #fff;
   font: {
-    family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    family: $font-family;
   }
   h1{
     font-size: 80px;
     margin-bottom: 10px;
   }
 }
-.header_subheading{
 
-  display: block;
-  font-size: 22px;
-  margin: 10px 0 0px;
-  font-weight: 200;
+
+
+.header_bio_wrapper{
+  display: table;
+}
+
+
+.header_potrait{
+  display: table-cell;
+  img{
+    border-radius: 50%;
+  }
+    
+
 }
 
 .header_bio{
+  display: table-cell;
+  font-size: 28px;
+  padding-left: 20px;
+  margin: 10px 0 0px;
+  font-weight: 200;
+  vertical-align: middle;
+}
+
+
+.header_bio_secondrow{
+  display: table-cell;
   margin: 10px 0 10px;
+  font-size: 18px;
+  vertical-align: middle;
+  padding-bottom: 10px;
 
 }
 
@@ -71,7 +93,7 @@ hr.small {
 .header_badges
 {
   float: left;
-  width: 50%;
+  //width: 50%;
   
 
   a{
@@ -100,12 +122,12 @@ hr.small {
 
 //SEARCH!
 .searchcontainer{
-  float: right;
-  width: 50%;
+ // float: right;
+  width: 75%;
   }
 
 .searchcontainer input#search{
-  width: 55%;
+  width: 65%;
   height: 42px;
   background: #ffffff;
   border: none;
@@ -255,9 +277,9 @@ body {
 
 .footer {
   background-color: $brand-color;
-  background-image: -webkit-gradient(linear, left top, right bottom, from($brand-color), to(#E83B0C));
-  background-image: -webkit-linear-gradient(top left, $brand-color, #E96F23);
-  background-image: linear-gradient(to bottom right, $brand-color, #E83B0C);
+  background-image: -webkit-gradient(linear, left top, right bottom, from($brand-color), to($brand-color-dark));
+  background-image: -webkit-linear-gradient(top left, $brand-color, $brand-color-dark);
+  background-image: linear-gradient(to bottom right, $brand-color, $brand-color-dark);
 }
 
 
