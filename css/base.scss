@@ -147,6 +147,66 @@ hr.post {
 }
 
 
+//Hot News!
+
+.hot_news {
+  
+  padding: 20px 50px 20px 50px;
+  
+  border-left: 1px solid #e7e5e5;
+  border-top: 1px solid #e7e5e5;
+  border-right: 1px solid #e7e5e5;
+  border-bottom: 1px solid #e7e5e5;
+  
+  background: #ffffff;
+  &:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  box-shadow: 5px 5px 25px #424242; 
+
+  
+}
+
+.post-title-hotnews{
+
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+  }
+
+
+  color: $text-color ;
+  a {
+    color: $text-color;
+    transition: color 0.3s;
+    &:hover {
+      color: $brand-color;
+    }
+  }
+}
+
+
+
+//post meta is date and stuff
+.hotnews-meta-meta {
+  text-align: center;
+  width: auto;
+  margin: 0;
+  padding: .25em 0;
+
+}
+
+
+.hotnews-post
+{
+  text-align: center;
+}
+
+
 
 
 //SEARCH!
