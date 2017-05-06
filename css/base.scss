@@ -26,11 +26,20 @@ $tablet : 700px;
 
 
 
+body {
+  //background-color: $brand-color;
+  overflow-x: hidden;
+  font-family: $font-family, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  //background-image: linear-gradient(to bottom right, $grey-color-dark, $brand-color-dark);
+  background-image: linear-gradient(to bottom, $brand-color-dark, $brand-color);
+}
+
 //HEADER STUFF
 
 .header {
-  background-color: $brand-color;
-  background-image: linear-gradient(to bottom right, $brand-color, $brand-color-dark);
+  //background-color: $grey-color-dark
+  //background-image: linear-gradient(to bottom, $grey-color-dark, $brand-color-dark);
+  
 }
 
 .header_content {
@@ -71,7 +80,7 @@ $tablet : 700px;
 
 .header_bio{
   display: table-cell;
-  font-size: 28px;
+  font-size: 48px;
   padding-left: 20px;
   margin: 10px 0 0px;
   font-weight: 200;
@@ -113,6 +122,13 @@ hr.post {
     text-decoration: none;
     color: #ffffff;
   }
+  
+  i{
+    width: 42px !important;
+    height: 42px !important;
+
+  }
+
 }
 
 
@@ -273,7 +289,7 @@ hr.post {
     border-bottom: none;
     padding-bottom: 0;
   }
-  box-shadow: 5px 5px 25px #9E9E9E; 
+  box-shadow: 5px 5px 25px #424242; 
 }
 
 
@@ -296,11 +312,7 @@ hr.post {
 }
 
 
-body {
-  background-color: #F2F2F1;
-  overflow-x: hidden;
-  font-family: $font-family, "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
+
 
 
 //PAGINATION!
@@ -376,10 +388,10 @@ body {
 
 
 .footer {
-  background-color: $brand-color;
-  background-image: -webkit-gradient(linear, left top, right bottom, from($brand-color), to($brand-color-dark));
-  background-image: -webkit-linear-gradient(top left, $brand-color, $brand-color-dark);
-  background-image: linear-gradient(to bottom right, $brand-color, $brand-color-dark);
+  //background-color: $brand-color;
+  //background-image: -webkit-gradient(linear, left top, right bottom, from($brand-color), to($brand-color-dark));
+  //background-image: -webkit-linear-gradient(top left, $brand-color, $brand-color-dark);
+ // background-image: linear-gradient(to bottom right, $brand-color, $brand-color-dark);
 }
 
 
