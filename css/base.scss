@@ -242,6 +242,23 @@ hr.post {
 }
 
 
+.post-interaction{
+
+
+ color: $text-color ;
+  a {
+    color: $text-color;
+    transition: color 0.3s;
+    &:hover {
+      color: $brand-color;
+    }
+  }
+
+
+}
+
+
+
 .post-single {
   margin: 20px 0;
   padding: 20px 50px 20px 50px;

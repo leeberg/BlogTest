@@ -24,8 +24,15 @@ layout: default
                 {{ post.excerpt }}
             {% endif %}
         </p>
-        <!--        <a href="{{ post.url | prepend: site.baseurl }}" class="btn-readpost" data-sr-id="6" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: all 0.35s ease 0s, -webkit-transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; transition: all 0.35s ease 0s, transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; ">Read Post!</a> -->
-    </section><br>
+
+    <hr class="post">
+    <div class="post-interaction">
+        <a href="{{ post.url | prepend: site.baseurl }}">Read Post</a>
+        &nbsp;&nbsp;
+        <a href="https://twitter.com/intent/tweet?text=Shared post by @LeeAlanBerg {{ post.title }}" data-size="large">Share on Twitter
+         
+    </section>
+
     {% endfor %}
 
     <!-- Pagination links -->
