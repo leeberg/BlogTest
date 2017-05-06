@@ -11,7 +11,7 @@ $base-font-weight: 300;
 $small-font-size : $base-font-size * 0.875;
 $base-line-height: 1.5;
 $spacing-unit : 30px;
-$text-color : #111;
+$text-color : #333333;
 $background-color: #fdfdfd;
 $brand-color : #FF9800;
 $brand-color-dark : #FF5722;
@@ -93,6 +93,12 @@ hr.small {
   border-color: white;
 }
 
+hr.post {
+  margin: 5px auto;
+  border-color: white;
+}
+
+
 
 .header_badges
 {
@@ -140,7 +146,7 @@ hr.small {
   border: none;
   font-size: 10pt;
   float: left;
-  color: #63717f;
+  color: $text-color;
   padding-left: 20px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -183,6 +189,33 @@ hr.small {
 
 //POSTS
 
+
+
+.main_content {
+  max-width: $content-width;
+  margin: 0 auto;
+  //background: yellow;
+  //padding: 0 75px 75px 75px;
+
+  //Prevent Images from overrun
+  img{
+    max-width: 100%;
+  }
+
+  //Prevent Images from overrun
+  .code{
+    max-width: 100%;
+  }
+
+
+}
+
+
+
+
+
+
+
 .post_header{
     //Contains the Post Title and Post Meta
 
@@ -198,9 +231,9 @@ hr.small {
   }
 
 
-  color: #384455;
+  color: $text-color ;
   a {
-    color: #384455;
+    color: $text-color;
     transition: color 0.3s;
     &:hover {
       color: $brand-color;
@@ -211,14 +244,19 @@ hr.small {
 
 .post-single {
   margin: 20px 0;
-  padding: 25px 0;
+  padding: 20px 50px 20px 50px;
+  
+  border-left: 1px solid #e7e5e5;
+  border-top: 1px solid #e7e5e5;
+  border-right: 1px solid #e7e5e5;
   border-bottom: 1px solid #e7e5e5;
-  padding-bottom: 20px;
-
+  
+  background: #ffffff;
   &:last-child {
     border-bottom: none;
     padding-bottom: 0;
   }
+  box-shadow: 5px 5px 25px #9E9E9E; 
 }
 
 
@@ -248,36 +286,74 @@ body {
 }
 
 
+//PAGINATION!
 
 
+.pagination {
+  text-align: center;
+  margin-top: 0;
+  margin: 20px 0 20px;
+  padding: 5px 5px 5px 50px;
+  
+  border-left: 1px solid #e7e5e5;
+  border-top: 1px solid #e7e5e5;
+  border-right: 1px solid #e7e5e5;
+  border-bottom: 1px solid #e7e5e5;
 
-// Post
-
-
-
-
-.main_content {
-  max-width: $content-width;
-  margin: 0 auto;
-  background: white;
-  padding: 0 75px 75px 75px;
-
-  //Prevent Images from overrun
-  img{
-    max-width: 100%;
+  padding-bottom: 20px;
+  background: #ffffff;
+  &:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
   }
-
-  //Prevent Images from overrun
-  .code{
-    max-width: 100%;
-  }
-
+  box-shadow: 5px 5px 25px #9E9E9E; 
+  
+  vertical-align: middle;
 
 }
 
 
 
+.pagination-title {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
 
+  a {
+    text-decoration: none;
+  }
+
+
+  color: $text-color ;
+  a {
+    color: $text-color;
+    transition: color 0.3s;
+    &:hover {
+      color: $brand-color;
+    }
+  }
+}
+
+
+.pagination-controls {
+  font-size: 18px;
+
+  text-align: center;
+
+  color: $text-color ;
+  a {
+    color: $text-color;
+    transition: color 0.3s;
+    &:hover {
+      color: $brand-color;
+    }
+  }
+}
+
+
+
+
+// FOOT STUFF
 
 
 

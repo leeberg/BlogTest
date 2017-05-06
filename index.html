@@ -15,49 +15,48 @@ layout: default
               -
                 {{tag}}
               {% endfor %}
-
           </p>
-        
+            <hr class="post">
         <p>
             {% if post.summary %}
               {{ post.summary }}
             {% else %}
                 {{ post.excerpt }}
             {% endif %}
-
-            
         </p>
-
-<!--        <a href="{{ post.url | prepend: site.baseurl }}" class="btn-readpost" data-sr-id="6" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: all 0.35s ease 0s, -webkit-transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; transition: all 0.35s ease 0s, transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; ">Read Post!</a> -->
-
-    </section>
+        <!--        <a href="{{ post.url | prepend: site.baseurl }}" class="btn-readpost" data-sr-id="6" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: all 0.35s ease 0s, -webkit-transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; transition: all 0.35s ease 0s, transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; ">Read Post!</a> -->
+    </section><br>
     {% endfor %}
 
     <!-- Pagination links -->
     {% if paginator.total_pages > 1 %}
         <div class="pagination">
-            {% if paginator.previous_page %}
-                <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
-            {% else %}
-        <!--        <span>&laquo; Prev</span> -->
-            {% endif %}
+            <div class="pagination-title">See More Posts:</div>
+                <div class="pagination-controls">
+                    {% if paginator.previous_page %}
+                        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+                    {% else %}
+                     <!--        <span>&laquo; Prev</span> -->
+                    {% endif %}
 
-            {% for page in (1..paginator.total_pages) %}
-                {% if page == paginator.page %}
-                <em>{{ page }}</em>
-                {% elsif page == 1 %}
-                <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
-                {% else %}
-                <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-                {% endif %}
-            {% endfor %}
+                    {% for page in (1..paginator.total_pages) %}
+                        {% if page == paginator.page %}
+                        <em>{{ page }}</em>
+                        {% elsif page == 1 %}
+                        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+                        {% else %}
+                        <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+                        {% endif %}
+                    {% endfor %}
 
-            {% if paginator.next_page %}
-                <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
-            {% else %}
-                <!-- <span>Next &raquo;</span> -->
-            {% endif %}
-        </div>
+                    {% if paginator.next_page %}
+                        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+                    {% else %}
+                        <!-- <span>Next &raquo;</span> -->
+                    {% endif %}
+                    <br>
+                </div>
+            </div>
     {% endif %}
 
 
