@@ -90,8 +90,8 @@ Step 2 is the most simple as we are simple creating a compressed ZIP archived fi
 
 ![]({{ site.baseurl }}/assets/img/7.png)
 
-**STEP3 - Use the "Azure App Service Deployment" Activity to deploy the ZIP file
-**This is the final step where the magic really happens. In this step we are using the "Azure App Service Deployment" Activity. This is an activity specifically designed to send files / configurations to an Azure App Service. Since our Azure Functions / Function App ARE/ARE built on top of the Azure App Service this will work perfectly for us.
+**STEP3 - Use the "Azure App Service Deployment" Activity to deploy the ZIP file**
+This is the final step where the magic really happens. In this step we are using the "Azure App Service Deployment" Activity. This is an activity specifically designed to send files / configurations to an Azure App Service. Since our Azure Functions / Function App ARE/ARE built on top of the Azure App Service this will work perfectly for us.
 
 
 ![]({{ site.baseurl }}/assets/img/8.png)
