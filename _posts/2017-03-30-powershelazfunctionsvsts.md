@@ -55,9 +55,9 @@ This represents a **SIMPLE / QUICK / EASY solution** your mileage may vary and o
 
 This process of deploying our Function App and Azure Functions is as follows:
 
-1. Azure ARM Template Deployment to Create/Update the Function App
-2. Archive the wwwroot Directory into a Zip File
-3. Azure App Service Deployment activity to deploy the ZIP file we created in Step 2 to the Function App created in Step 1
+1. **Azure ARM Template Deployment to Create/Update the Function App**
+2. **Archive the wwwroot Directory from our Repository into a Zip File**
+3. **Azure App Service Deployment activity to deploy the ZIP file we created in Step 2 to the Function App created in Step 1**
 
 
 ![]({{ site.baseurl }}/assets/img/4.png)
