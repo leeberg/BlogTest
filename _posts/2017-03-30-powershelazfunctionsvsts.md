@@ -53,14 +53,12 @@ Here I have created a new Build Definition in my repository containing the Funct
 
 This represents a **SIMPLE / QUICK / EASY solution** your mileage may vary and of course there are MANY ways to complete this tasks. If you search online you will find a wide variety of solutions, but this one relies on "out of box" VSTS capabilities and minimal custom code.
 
-The general process of deploying our Function App and Azure Functions is as follows:
+This process of deploying our Function App and Azure Functions is as follows:
 
-**STEP 1 - Azure Deployment
-****STEP 2 - Archive the wwwroot Directory into a Zip File
-STEP 3 - Use the "Azure App Service Deployment" Activity to deploy the ZIP file**
+1. Azure ARM Template Deployment to Create/Update the Function App
+2. Archive the wwwroot Directory into a Zip File
+3. Azure App Service Deployment activity to deploy the ZIP file we created in Step 2 to the Function App created in Step 1
 
-**
-**
 
 ![]({{ site.baseurl }}/assets/img/4.png)
 
