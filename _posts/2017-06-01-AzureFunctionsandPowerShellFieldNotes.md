@@ -19,8 +19,8 @@ After a few weeks, we had some major issues come up, that I believe are now reso
 First off, before we get started, I want to thank <a href="https://twitter.com/ling_toh" target="_blank">Ling Toh</a> - a Software Engineer working on Azure Web Apps and Azure Functions at Microsoft for all the great feedback all over GitHub, pretty much all these tips came directly from Ling's feedback!
 
 
-### 1. **DO NOT rely on the "Default" Azure PowerShell Modules - ensure you import your needed Modules in your functions**
-One of my favorite features of Azure Functions PowerShell was the fact that we have many modules available to us by default. You can even easily see what <a href="https://blogs.msdn.microsoft.com/powershell/2017/02/24/using-powershell-modules-in-azure-functions/" target="_blank">modules are available to you in the PowerShell profile by default</a>, *However*, even if you see the modules are available, I would strongly advise you **NOT** to rely on this information. I have had occurrences where the modules that are available/loaded DIFFER based on the VM that is being used be your Azure Functions. In my case, after turning off my Function App for an hour during a maintenance window, the Azure Modules **WERE NOT** loaded at the time of Execution when I turned by Function App Back on. I have also had this happen for hours at a time seemingly at random. This has caused many headaches in our production environments. Luckily, there is a viable work-around - If you plan on using the Azure PowerShell modules, ensure you explicitly import them in your function, in my example:
+### 1. **DO NOT rely on the "Default" Azure PowerShell Modules - ensure you import your needed Modules in your functions** ###
+- One of my favorite features of Azure Functions PowerShell was the fact that we have many modules available to us by default. You can even easily see what <a href="https://blogs.msdn.microsoft.com/powershell/2017/02/24/using-powershell-modules-in-azure-functions/" target="_blank">modules are available to you in the PowerShell profile by default</a>, *However*, even if you see the modules are available, I would strongly advise you **NOT** to rely on this information. I have had occurrences where the modules that are available/loaded DIFFER based on the VM that is being used be your Azure Functions. In my case, after turning off my Function App for an hour during a maintenance window, the Azure Modules **WERE NOT** loaded at the time of Execution when I turned by Function App Back on. I have also had this happen for hours at a time seemingly at random. This has caused many headaches in our production environments. Luckily, there is a viable work-around - If you plan on using the Azure PowerShell modules, ensure you explicitly import them in your function, in my example:
      
     ```powershell
     Import-Module "D:\Program Files (x86)\Microsoft SDKs\Azure\PowerShell\ResourceManager\AzureResourceManager\AzureRM.Profile\AzureRM.Profile.psd1" -Global;
@@ -29,8 +29,8 @@ One of my favorite features of Azure Functions PowerShell was the fact that we h
     ```
     
      
-### 2. **Take the time to verify resources installed on the instance and check which / what version of Modules are Installed**
-This is another great use of the Kudu console, normally you would use the debug console to browse the files/folders specific to your Function App, but it can also be used to see what resources are available on the Azure Function VM - in this case, the Azure SDK.
+### 2. **Take the time to verify resources installed on the instance and check which / what version of Modules are Installed** ###
+- This is another great use of the Kudu console, normally you would use the debug console to browse the files/folders specific to your Function App, but it can also be used to see what resources are available on the Azure Function VM - in this case, the Azure SDK.
     
 1. Navigate to the Azure Functions Portal UI.
 2. Click on your Function App and select Platform features -> Advanced tools(Kudu)
@@ -42,7 +42,7 @@ This is another great use of the Kudu console, normally you would use the debug 
     -Note: If you need a specific version of the Azure PowerShell Modules, you can certainly upload them yourself to your Function Apps WWWROOT folder.
         
 
-### 3. **Ensure you do not require PowerShell Version 5 features!**
+### 3. **Ensure you do not require PowerShell Version 5 features!** ###
    - On the Azure Functions issue list, it is claimed that the PowerShell version 5 Installation does not work on the Azure Function VMs, therefore PowerShell Azure Functions for the time being, will only be PowerShell V4, ensure your scripts do not need/utilize version 5 Specific features!
 
 
