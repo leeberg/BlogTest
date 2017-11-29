@@ -3,6 +3,7 @@ layout: post
 title: "Azure Functions - OMS: Data Retrieval and Injection"
 date: 2017-02-05
 tags: ["OMS","Azure","Azure Functions"]
+MyCustomTagName: "Test"
 excerpt_separator: <!--more-->
 ---
 
