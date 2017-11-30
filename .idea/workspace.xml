@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6fc74766-ec01-4567-b2a1-acd341756933" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-04-14-AzureFunctionsOMS.md" afterPath="$PROJECT_DIR$/_posts/2017-04-14-AzureFunctionsOMS.md" />
-    </list>
+    <list default="true" id="6fc74766-ec01-4567-b2a1-acd341756933" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -31,12 +28,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2017-03-30-powershelazfunctionsvsts.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2017-03-30-powershelazfunctionsvsts.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2017-03-30-powershelazfunctionsvsts.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="335">
-                <caret line="99" column="114" lean-forward="true" selection-start-line="99" selection-start-column="114" selection-end-line="99" selection-end-column="114" />
+                <caret line="99" column="114" lean-forward="false" selection-start-line="99" selection-start-column="114" selection-end-line="99" selection-end-column="114" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2017-11-29-SpeakingAtELEUS18.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/2017-11-29-SpeakingAtELEUS18.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="374">
+                <caret line="22" column="7" lean-forward="false" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -75,6 +85,7 @@
         <option value="$PROJECT_DIR$/_posts/2017-05-04-AzureFunctionsAppInsightsandOms.md" />
         <option value="$PROJECT_DIR$/_posts/2017-05-20-MMS2017.md" />
         <option value="$PROJECT_DIR$/_posts/2017-03-30-powershelazfunctionsvsts.md" />
+        <option value="$PROJECT_DIR$/_posts/2017-11-29-SpeakingAtELEUS18.md" />
       </list>
     </option>
   </component>
@@ -85,8 +96,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-238" />
-    <option name="y" value="557" />
+    <option name="x" value="36" />
+    <option name="y" value="91" />
     <option name="width" value="1845" />
     <option name="height" value="931" />
   </component>
@@ -133,8 +144,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -254,14 +265,16 @@
       <workItem from="1500596233040" duration="599000" />
       <workItem from="1500787401213" duration="599000" />
       <workItem from="1501797284469" duration="2000" />
+      <workItem from="1511999349232" duration="1500000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29203000" />
+    <option name="totallyTimeSpent" value="30703000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-238" y="557" width="1845" height="931" extended-state="0" />
+    <frame x="36" y="91" width="1845" height="931" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14051394" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -292,13 +305,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/AzureFunctionsAppInsightsandOms.md" />
     <entry file="file://$PROJECT_DIR$/_posts/2017-04-22-desktop_apps_gist.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -623,7 +629,18 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="335">
-            <caret line="99" column="114" lean-forward="true" selection-start-line="99" selection-start-column="114" selection-end-line="99" selection-end-column="114" />
+            <caret line="99" column="114" lean-forward="false" selection-start-line="99" selection-start-column="114" selection-end-line="99" selection-end-column="114" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2017-11-29-SpeakingAtELEUS18.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="374">
+            <caret line="22" column="7" lean-forward="false" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
             <folding />
           </first_editor>
           <second_editor />
