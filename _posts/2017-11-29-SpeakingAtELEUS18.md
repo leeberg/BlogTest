@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Speaking at Experts Live US 2018 ⭐🌮🌶️🇺🇸
+title: Speaking at Experts Live US 2018 ⭐🌮🌶️🇺🇸 🐂
 date: 2017-11-29
 tags: ["Experts Live","Speaking","Conferences"]
 excerpt_separator: <!--more-->
