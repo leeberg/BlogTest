@@ -20,7 +20,7 @@ I am proud to annouce that I will also be speaking at this conference!
 I will be speaking on the following Topics:
 * <a href="https://elus18.sched.com/event/D12R/digital-transformation-with-modern-itsm?iframe=no&w=100%&sidebar=yes&bg=no" target="_blank">Digital Transformation with Modern ITSM</a>
 * <a href="https://elus18.sched.com/event/D12b/ama-discussion-panel-devops-automation?iframe=no&w=100%&sidebar=yes&bg=no" target="_blank">AMA Discussion Panel: DevOps & Automation</a>
-* <a href="https://elus18.sched.com/event/D12b/ama-discussion-panel-devops-automation?iframe=no&w=100%&sidebar=yes&bg=no" target="_blank">Supercharge your IT Pro workflow with Visual Studio Team Services</a>
+* <a href="https://elus18.sched.com/event/D9j8/supercharge-your-it-pro-workflow-with-visual-studio-team-services" target="_blank">Supercharge your IT Pro workflow with Visual Studio Team Services</a>
 
 
 
