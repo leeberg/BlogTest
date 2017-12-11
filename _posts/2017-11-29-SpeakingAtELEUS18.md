@@ -20,7 +20,8 @@ I am proud to annouce that I will also be speaking at this conference!
 I will be speaking on the following Topics:
 * <a href="https://elus18.sched.com/event/D12R/digital-transformation-with-modern-itsm?iframe=no&w=100%&sidebar=yes&bg=no" target="_blank">Digital Transformation with Modern ITSM</a>
 * <a href="https://elus18.sched.com/event/D12b/ama-discussion-panel-devops-automation?iframe=no&w=100%&sidebar=yes&bg=no" target="_blank">AMA Discussion Panel: DevOps & Automation</a>
-* More TBA!
+* <a href="https://elus18.sched.com/event/D12b/ama-discussion-panel-devops-automation?iframe=no&w=100%&sidebar=yes&bg=no" target="_blank">Supercharge your IT Pro workflow with Visual Studio Team Services</a>
+
 
 
 I'm very excited to be escaping the [Wisconsin Weather](https://www.youtube.com/watch?v=PTh6PgzgQqI) to head down Texas for a few days for some great food, friends, learning new friend, and the great opportunity to present! 
