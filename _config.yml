@@ -31,11 +31,18 @@ markdown: kramdown
 highlighter: rouge
 sass:
   compressed: true
-gems:
+
+# Markdown Processors
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
+
+plugins:
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-gist
 
 exclude:
   - Gemfile
   - Gemfile.lock
-
