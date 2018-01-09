@@ -37,8 +37,9 @@ Since this was my lab and I had no fear of issues, I simply deleted the entire "
 
 Afterwards, I was able to run the:
 
-```Add-HybridRunbookWorker -Name <String> -EndPoint <Url> -Token <String> command without any issues and the server is now happily functioning as a hybrid runbook worker registered with a new azure automation subscription again.```
-
+``` powershell 
+Add-HybridRunbookWorker -Name <String> -EndPoint <Url> -Token <String> command without any issues and the server is now happily functioning as a hybrid runbook worker registered with a new azure automation subscription again.```
+```
 
 **Before:**
 
