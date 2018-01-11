@@ -36,11 +36,6 @@ body {
 
 //HEADER STUFF
 
-.header {
-  //background-color: $grey-color-dark
-  //background-image: linear-gradient(to bottom, $grey-color-dark, $brand-color-dark);
-  
-}
 
 .header_content {
   width: $content-width;
@@ -289,14 +284,6 @@ hr.post {
 
 
 
-
-
-
-.post_header{
-    //Contains the Post Title and Post Meta
-
-}
-
 .post-title {
   font-size: 24px;
   font-weight: bold;
@@ -444,15 +431,6 @@ hr.post {
 
 // FOOT STUFF
 
-
-
-
-.footer {
-  //background-color: $brand-color;
-  //background-image: -webkit-gradient(linear, left top, right bottom, from($brand-color), to($brand-color-dark));
-  //background-image: -webkit-linear-gradient(top left, $brand-color, $brand-color-dark);
- // background-image: linear-gradient(to bottom right, $brand-color, $brand-color-dark);
-}
 
 
 .footer_links {
