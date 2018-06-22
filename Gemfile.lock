@@ -12,7 +12,7 @@ GEM
     concurrent-ruby (1.0.5)
     faraday (0.13.1)
       multipart-post (>= 1.2, < 3)
-    ffi (1.9.18-x64-mingw32)
+    ffi (1.9.25-x64-mingw32)
     forwardable-extended (2.6.0)
     gemoji (3.0.0)
     html-pipeline (2.7.1)
@@ -36,7 +36,7 @@ GEM
     jekyll-gist (1.5.0)
       octokit (~> 4.2)
     jekyll-paginate (1.1.0)
-    jekyll-sass-converter (1.5.1)
+    jekyll-sass-converter (1.5.2)
       sass (~> 3.4)
     jekyll-sitemap (1.1.1)
       jekyll (~> 3.3)
@@ -47,7 +47,7 @@ GEM
       gemoji (~> 3.0)
       html-pipeline (~> 2.2)
       jekyll (~> 3.0)
-    kramdown (1.16.2)
+    kramdown (1.17.0)
     liquid (4.0.0)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
@@ -59,20 +59,20 @@ GEM
       jekyll (~> 3.3)
     minitest (5.10.3)
     multipart-post (2.0.0)
-    nokogiri (1.8.1-x64-mingw32)
+    nokogiri (1.8.2)
       mini_portile2 (~> 2.3.0)
     octokit (4.7.0)
       sawyer (~> 0.8.0, >= 0.5.3)
     pathutil (0.16.1)
       forwardable-extended (~> 2.6)
-    public_suffix (3.0.1)
-    rb-fsevent (0.10.2)
+    public_suffix (3.0.2)
+    rb-fsevent (0.10.3)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
     rouge (2.2.1)
     ruby_dep (1.5.0)
     safe_yaml (1.0.4)
-    sass (3.5.3)
+    sass (3.5.6)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
@@ -100,7 +100,7 @@ DEPENDENCIES
   tzinfo-data
 
 RUBY VERSION
-   ruby 2.3.1p112
+   ruby 2.4.4p296
 
 BUNDLED WITH
-   1.16.0
+   1.16.2
