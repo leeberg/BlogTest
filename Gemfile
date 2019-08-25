@@ -9,7 +9,7 @@ ruby RUBY_VERSION
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "3.8.5"
+gem "jekyll", "~> 4.0"
 
 # security fix
 gem "activesupport", ">= 4.1.11"
